@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				console.log(response);
 				if (response.status === 200) {
 					response.json().then(resp => {
+						// w tym miejscu zwracane są dane z tego fetcha a nie dane wpisane do inputów
 						console.log(resp)
 					})
 				}
